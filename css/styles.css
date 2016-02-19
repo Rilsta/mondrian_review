@@ -21,12 +21,11 @@ body{
   margin:0;
   padding:0;
   background:white;
-  text-transform: uppercase;
 }
 
 .navbar h3{
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   margin:5px;
   padding:20px 0 5px 10px;
 }
@@ -37,18 +36,19 @@ body{
   padding:5px 5px 10px 5px;
   background:rgb(240,240,240);
   width: 100%;
+  text-transform: uppercase;
 }
 
 .navbar li {
   display: inline;
-  padding:5px;
-  margin:5px;
+  padding:5px 0 5px 5px;
+  margin:5px 0 5px 5px;
 }
 
 .navbar a {
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .header-text{
@@ -62,8 +62,10 @@ body{
   padding:0;
 }
 
-.header-text p{
+#city{
+  font-size: 10px;
   font-family: sans-serif;
+  font-weight: bold;
 }
 
 .header-img{
@@ -124,7 +126,7 @@ body{
     top: 5vh;
     left: 5vh;
     width: 175px;
-    background:rgba(240,240,240, 0.7);
+    background:rgba(240,240,240, 0.9);
     padding-right: 15px;
   }
 
@@ -143,7 +145,7 @@ body{
 
   .navbar li {
     display: inline;
-    line-height: 20px;
+    line-height: 15px;
     padding:5px;
     margin:5px;
   }
@@ -158,10 +160,6 @@ body{
     text-shadow: 2px 2px 2px black;
   }
 
-  #city{
-    font-size: 10px;
-  }
-
   .header-img{
     height: 70vh;
     background-position: bottom;
@@ -172,7 +170,7 @@ body{
     background-color: #041900;
     width: 49%;
     margin: 2vh 0 0 0;
-    height: 28.5vh;
+    height: 28vh;
     float:left;
     text-align: center;
   }
@@ -209,10 +207,10 @@ body{
   .about{
     margin: 2vh 0 0 0;
     width: 49%;
-    height: 28.5vh;
+    height: 28vh;
     float: right;
 
-    background-color: black;
+    background-color: #0F0E0E;
   }
 
   .about img{
@@ -222,13 +220,14 @@ body{
   .about p{
     font-size: 12px;
     color: white;
+    line-height: 23px;
   }
 
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:900px) {
   .header-img{
-    width: 73vw;
+    width: 70%;
     height: 100vh;
     float: left;
   }
@@ -239,21 +238,26 @@ body{
 
   .header-img + .featured{
     margin: 0 0 2vh 0;
-    width: 25vw;
+    width: 29%;
     height: 49vh;
     float: right;
   }
 
   .about{
-    margin:0;
-    width: 25vw;
-    margin: 0;
+    margin: 0 0 0 0;
+    width: 29%;
     height: 49vh;
     float: right;
+    position: relative;
   }
 
-  .about p{
-    font-size: 14px;
+  .about img{
+    margin-bottom: 20px;
+  }
+
+  .about-content{
+    position: relative;
+    top: 10%;
   }
 
   #large-screen{
